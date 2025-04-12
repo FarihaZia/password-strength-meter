@@ -30,7 +30,7 @@ def check_password_strength(password):
     if re.search(r"[A-Z]", password) and re.search(r"[a-z]", password):
         score += 1
     else:
-        feedback.append("❌ Password should include **both uppercae(A-z) and lowercase(a-z)")
+        feedback.append("❌ Password should include **both uppercase(A-Z) and lowercase(a-z)")
 
     #special characters    
     if re.search(r"[!@#$%^&*]", password):
